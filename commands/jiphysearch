@@ -1,0 +1,11 @@
+#!/usr/bin/env okshell
+
+var argumentString = arguments.map(encodeURIComponent).join("+");
+
+var a = query("https://api.giphy.com/v1/gifs/search?q=" + argumentString)
+
+a.data.map(function(image) {
+   print(image.url);
+
+   show(image.images.fixed_height_small.url);
+});
