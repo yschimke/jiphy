@@ -1,2 +1,2 @@
-# abitsheet
-Sheetsu API Tools
+# jiphy
+Giphy API Tools
